@@ -5,7 +5,7 @@ Welcome to the repository of my personal portfolio website. This project serves 
 ## 🚀 About the Project
 This website is designed with a "Science & Space" theme, reflecting my passion for exploring how the universe works—from quantum mechanics to electronic systems.
 
-- **Live Demo:** [Link to your website here]
+- **Live Demo:** https://tofighaydarov.github.io/TofigHaydarov/
 - **Major:** Electrical and Electronics Engineering (BSEEE)
 - **University:** ADA University
 
@@ -27,9 +27,9 @@ One of the highlights of this repository is the documentation of my **Logic Gate
 - Explored the transition from Boolean algebra to physical hardware.
 
 ## 📬 Connect with Me
-- **LinkedIn:** [Your LinkedIn Profile]
+- **LinkedIn:** https://www.linkedin.com/in/tofiq-heyd%C9%99rov-2b5117321/
 - **Email:** thaydarov27027@ada.edu.az
-- **Codecademy:** [Your Profile Link]
+
 
 ---
 *Created with curiosity and engineered for the future.*

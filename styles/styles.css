@@ -412,6 +412,15 @@ p {
     margin-top: 2rem;
 }
 
+/* Featured Project (Single Project) */
+.projects-grid[style*="max-width"] {
+    grid-template-columns: 1fr;
+}
+
+.projects-grid[style*="max-width"] .project-card {
+    max-width: 100%;
+}
+
 .project-card {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);

@@ -3,8 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Portfolio</title>
+    <title>The Cosmic Microwave Background: Listening to the Beginning of Time - Blog</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        .blog-post {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .blog-post-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .blog-post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .blog-post-meta {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .blog-post-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .blog-post-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #333;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .blog-post-content p:first-of-type {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+            color: #0052a3;
+        }
+
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-title {
+                font-size: 2rem;
+            }
+
+            .blog-post-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -13,45 +102,41 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <h1 class="section-title">Projects</h1>
-            
-            <div class="projects-grid" style="max-width: 900px; margin: 0 auto;">
-                <div class="project-card" style="text-align: center;">
-                    <h3 style="font-size: 2rem; margin-bottom: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">The Building Blocks of Digital Intelligence</h3>
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; text-align: left;">
-                        A hands-on exploration of digital circuitry. I successfully constructed and tested various logic gates (AND, OR, NAND, XOR) to understand the decision-making processes of modern computers. This project serves as the foundation for my further work in complex digital system design.
+            <div class="blog-post">
+                <a href="blog.html" class="back-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Blog
+                </a>
+
+                <div class="blog-post-header">
+                    <h1 class="blog-post-title">The Cosmic Microwave Background: Listening to the Beginning of Time</h1>
+                    <p class="blog-post-meta">January 2025</p>
+                </div>
+
+                <img src="../images/blog3-bigbang.jpg" alt="Cosmic Microwave Background Visualization" class="blog-post-image">
+
+                <div class="blog-post-content">
+                    <p>
+                        If you could "see" the entire sky in microwaves instead of visible light, you would see a faint glow everywhere. This isn't light from stars or galaxies; it's the Cosmic Microwave Background (CMB)—the literal afterglow of the Big Bang.
                     </p>
-                    <div class="tech-stack" style="justify-content: center; margin-bottom: 2rem;">
-                        <span class="tech-tag">Logic Gates</span>
-                        <span class="tech-tag">Digital Circuits</span>
-                        <span class="tech-tag">AND Gate</span>
-                        <span class="tech-tag">OR Gate</span>
-                        <span class="tech-tag">NAND Gate</span>
-                        <span class="tech-tag">XOR Gate</span>
-                        <span class="tech-tag">Circuit Design</span>
-                    </div>
-                    <div class="project-links" style="flex-direction: column; gap: 1rem; align-items: center;">
-                        <a href="https://www.youtube.com/watch?v=6F7TXtILz_M" target="_blank" rel="noopener noreferrer" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                            Watch Video 1
-                        </a>
-                        <a href="https://www.youtube.com/watch?v=SdyG92k8mvU" target="_blank" rel="noopener noreferrer" class="btn" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                            Watch Video 2
-                        </a>
-                    </div>
+
+                    <p>
+                        Think of it as the oldest "fossil" in the universe. It dates back to about 380,000 years after the Big Bang, when the universe finally cooled down enough for light to travel freely.
+                    </p>
+
+                    <p>
+                        By studying these ancient signals, scientists can map out the history of our cosmos. For engineers and physicists alike, it's a reminder that everything we see today—from the smallest electron to the largest galaxy—started from the same point of infinite energy. We are, quite literally, made of stardust and ancient light.
+                    </p>
                 </div>
             </div>
         </div>
